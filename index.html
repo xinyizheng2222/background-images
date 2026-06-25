@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Background Image Practice</title>
+  <link href="reset.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header>
+      <h1>Background Images</h1>
+    </header>
+
+    <main>
+
+      <p>The <code>background</code> and <code>background-image</code> properties add an image (jpg, gif, png, webp, or svg) to the inside of an HTML element. The <code>url()</code> value should include file path and file name of the image you want to use.</p>
+      <ul>
+        <li>By default the image starts in the top left corner of the element, but you can change its positioning. </li>
+        <li>The images repeat vertically and horizontally unless you tell them not to.</li>
+        <li>Unlike adding an image with the HTML &lt;img&gt; element, CSS background images do not take up their own space on the page. They are contained within the element's box.</li>
+      </ul>
+
+
+
+      <section class="info">
+        
+
+
+        <section class="property syntax">
+          <h2>Basic Syntax:</h2>
+          h1 {<br>
+            &nbsp;&nbsp;background-image: <strong>url(</strong>example.jpg<strong>)</strong>;
+          <br>}
+        </section>
+
+        <section class="property repeat">
+          <dl>
+            <dt>background-repeat:</dt>
+            <dd>no-repeat; <span class="normal">Won't repeat in any direction</span></dd>
+            <dd>repeat-x; <span class="normal">Repeats only horizontally</span></dd>
+            <dd>repeat-y; <span class="normal">Repeats only vertically</span></dd>
+            <dd>repeat; <span class="normal">Repeat in all directions (default behavior) </span></dd>
+            
+          </dl>
+        </section>
+
+        <section class="property position">
+          <dl>
+            <dt>background-position:</dt>
+            <dd>top;</dd>
+            <dd>bottom;</dd>
+            <dd>left;</dd>
+            <dd>center;</dd>
+            <dd>right;</dd>
+            <dd>%;</dd>
+            <dd>px;</dd>
+          </dl>
+        </section>
+
+        <section class="property size">
+          <dl>
+            <dt>background-size</dt>
+            <dd>cover; <span class="normal">Resizes background image you you can see ALL of it</span></dd>
+            <dd>contain; <span class="normal">Resizes image to be big enough to cover the leighth OR the width, whichever is longest. Some of the image is likely to be cropped.</span></dd>
+            <dd>% % <span class="normal">One or two percentage values. The first is the width and the second is the height.</span></dd>
+            <dd>px <span class="normal">One or two pixel values. The first is the width and the second is the height.</span></dd>
+          </dl>
+        </section>
+
+        <section class="property syntax">
+          <h2>Shorthand Syntax:</h2>
+          <p>To shorten the code, you can combine multiple properties into the single <code>background:</code> property. The properties must come in this order: </p>
+          <code>background: color url() repeat attachment position size;</code>
+        </section>
+
+        <section class="property example-image">
+            <img src="positions.png" alt="background position examples">
+        </section>
+      </section>
+
+    </main>
+
+    
+
+  </div>
+
+</body>
+</html>
